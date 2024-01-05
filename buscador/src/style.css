@@ -1,0 +1,86 @@
+.container{
+height: 100vh;
+align-items: center;
+flex-direction: column;
+display: flex;
+justify-content: center;
+background-color: #64395f;
+}
+
+.Title{
+    font-size: 80px;
+    color: #6caca0;
+    animation: AnimeTitle 2s;
+}
+
+@keyframes AnimeTitle {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);    
+    }
+}
+
+.containerInput{
+    background-color: #c075b7;
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.containerInput input{
+    background-color: transparent;
+    color: #ffff;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    margin-right: 5px;
+}
+
+.containerInput input::placeholder{
+    color: #3c2439;
+}
+
+.ButtonSearch{
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+
+.ButtonSearch:hover{
+    transform: scale(1.2);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6caca0;
+    width: 300px;
+    border-radius: 8px;
+
+}
+
+.main h2{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.main span{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 570px){
+    .Title{
+    font-size: 40px;
+    }
+}
